@@ -4,8 +4,12 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+future:
+  name: Future appt
+  starts_at: <%= 1.day.from_now %>
+  duration: 6000
+
+past:
+  name: Past appt
+  starts_at: <%= 1.day.ago %>
+  duration: 6000

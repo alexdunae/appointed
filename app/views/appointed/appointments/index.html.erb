@@ -1,0 +1,4 @@
+<% @appointments.each do |appointment| %>
+  <h3><%= appointment.name %></h3>
+  <p>Starts: <%= appointment.starts_at %>, duration: <%= appointment.duration %></p>
+<% end %>

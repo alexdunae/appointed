@@ -21,6 +21,12 @@ Or install it yourself as:
 $ gem install appointed
 ```
 
+## Bootstrap
+
+```bash
+rails runner '(1..5).each { |n| Appointed::Appointment.create!(name: "Appointment #{n}", starts_at: n.days.from_now, duration: 1000) }'
+```
+
 ## Contributing
 Contribution directions go here.
 
