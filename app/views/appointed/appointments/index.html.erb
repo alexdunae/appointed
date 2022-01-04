@@ -2,3 +2,6 @@
   <h3><%= appointment.name %></h3>
   <p>Starts: <%= appointment.starts_at %>, duration: <%= appointment.duration %></p>
 <% end %>
+
+Your Twilio API key can be configured in `test/dummy/lib/initializers/*.rb`:
+<%= Appointed.twilio_api_key.presence || 'NOT CONFIGURED YET' %>
