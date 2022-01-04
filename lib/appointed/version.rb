@@ -1,0 +1,3 @@
+module Appointed
+  VERSION = "0.1.0"
+end
